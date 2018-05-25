@@ -18,4 +18,4 @@ DD_CONFD_DIR="$BUILD_DIR/.apt/etc/datadog-agent/conf.d"
 mkdir -p $DD_CONFD_DIR
 if [ -d $BUILD_DIR/.dd_confd ]
   cp -f $BUILD_PACK_DIR/extra/conf.d/* $DD_CONFD_DIR
-end
+fi
