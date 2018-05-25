@@ -1,0 +1,8 @@
+init_config:
+  # Change default path of trusted certificates
+  # ca_certs: /etc/ssl/certs/ca-certificates.crt
+
+instances:
+  - name: Smile Core API
+    url: https://api.smile.io
+    timeout: 1

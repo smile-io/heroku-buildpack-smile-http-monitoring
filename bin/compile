@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+# Fail fast
+set -e
+
+# Debug
+# set -x
+
+# Parse and derive params
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+BUILDPACK_DIR=`cd $(dirname $0); cd ..; pwd`
+
+DD_CONFD_DIR="$BUILD_DIR/.apt/etc/datadog-agent/conf.d"
+
+mkdir -p $DD_CONFD_DIR
+if [ -d $BUILD_DIR/.dd_confd ]
+  cp -f $BUILD_PACK_DIR/extra/conf.d/* $DD_CONFD_DIR
+end
