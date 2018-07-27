@@ -6,3 +6,12 @@ instances:
   - name: Smile Core API
     url: https://api.smile.io
     timeout: 1
+  - name: Smile App
+    url: https://app.smile.io
+    timeout: 1
+  - name: Smile Website
+    url: https://www.smile.io
+    timeout: 1
+  - name: Smile Admin
+    url: https://admin.smile.io
+    timeout: 1
