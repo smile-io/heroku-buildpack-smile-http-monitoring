@@ -1,0 +1,1 @@
+secret_backend_command: python env_var_fetcher.py

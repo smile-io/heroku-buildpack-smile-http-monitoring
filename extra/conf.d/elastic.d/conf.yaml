@@ -1,0 +1,10 @@
+init_config:
+
+instances:
+  - url: "ENC[ELASTICSEARCH_URL]"
+    cluster_stats: true
+    index_stats: true
+    pshard_stats: true
+    # pshard_graceful_timeout: false  # continue gracefully if pshard stats TO
+    pending_task_stats: true
+    tags: {"ENC[ELASTICHSEARCH_TAGS]"}
