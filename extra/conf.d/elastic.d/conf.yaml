@@ -1,4 +1,5 @@
 init_config:
+  secret_backend_command: python ~/.apt/etc/datadog-agent/env_var_fetcher.py
 
 instances:
   - url: "ENC[ELASTICSEARCH_URL]"
