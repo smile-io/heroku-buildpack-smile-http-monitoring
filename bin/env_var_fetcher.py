@@ -9,7 +9,7 @@ payload = sys.stdin.read()
 # Parse the payload
 requested_vars = json.loads(payload)
 
-secrets = {}
+environment_vars = {}
 for var_name in requested_vars["secrets"]:
     environment_vars[var_name] = { "value": os.environ[var_name], "error": None }
 
