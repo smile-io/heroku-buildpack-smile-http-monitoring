@@ -15,11 +15,10 @@ BUILDPACK_DIR=`cd $(dirname $0); cd ..; pwd`
 
 DD_CONFD_DIR="$BUILD_DIR/.apt/etc/datadog-agent/conf.d"
 
-# Copy our integration configs into the agent's config folder
+topic "Copy custom intergation configs"
 mkdir -p $DD_CONFD_DIR
 cp -rf $BUILDPACK_DIR/extra/conf.d/* $DD_CONFD_DIR
 
-# Copy script to fetch environment variables into the agent's
-# folder so it is easily findable
+topic "Copy and setup env_var_fetcher script"
 cp $BUILDPACK_DIR/bin/env_var_fetcher.py $BUILD_DIR/.apt/etc/datadog-agent
 echo "secret_backend_command: python ~/.apt/etc/datadog-agent/env_var_fetcher.py" >> $BUILD_DIR/.apt/etc/datadog-agent/datadog.yaml
