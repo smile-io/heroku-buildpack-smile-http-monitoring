@@ -25,4 +25,4 @@ cp -rf $BUILDPACK_DIR/extra/conf.d/* $DD_CONFD_DIR
 # datadog initializer script will ultimately use as the base for
 # the live configuration file that it runs with)
 cp $BUILDPACK_DIR/bin/env_var_fetcher.py $BUILD_DIR/.apt/etc/datadog-agent
-echo "secret_backend_command: $BUILD_DIR/.apt/etc/datadog-agent/env_var_fetcher.py" >> $BUILD_DIR/.apt/etc/datadog-agent/datadog.yaml.example
+echo "secret_backend_command: /app/.apt/etc/datadog-agent/env_var_fetcher.py" >> $BUILD_DIR/.apt/etc/datadog-agent/datadog.yaml.example
