@@ -15,5 +15,14 @@ BUILDPACK_DIR=`cd $(dirname $0); cd ..; pwd`
 
 DD_CONFD_DIR="$BUILD_DIR/.apt/etc/datadog-agent/conf.d"
 
+# Copy our integration configuration files into the appropriate
+# directory so the datadog agent will find them on startup
 mkdir -p $DD_CONFD_DIR
 cp -rf $BUILDPACK_DIR/extra/conf.d/* $DD_CONFD_DIR
+
+# Copy our env fetcher script into an easily findable location,
+# and add a secret command to the example config file (which the
+# datadog initializer script will ultimately use as the base for
+# the live configuration file that it runs with)
+cp $BUILDPACK_DIR/bin/env_var_fetcher.py $BUILD_DIR/.apt/etc/datadog-agent
+echo "secret_backend_command: /app/.apt/etc/datadog-agent/env_var_fetcher.py" >> $BUILD_DIR/.apt/etc/datadog-agent/datadog.yaml.example
