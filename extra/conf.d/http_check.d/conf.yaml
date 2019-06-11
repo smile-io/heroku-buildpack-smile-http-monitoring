@@ -6,30 +6,40 @@ instances:
   - name: Smile Core API
     url: https://api.smile.io
     timeout: 1
+    days_warning: 365
   - name: Smile App
     url: https://app.smile.io
     timeout: 1
+    days_warning: 365
   - name: Smile Website
     url: https://www.smile.io
     timeout: 1
+    days_warning: 365
   - name: Smile Admin
     url: https://admin.smile.io
     timeout: 1
+    days_warning: 365
   - name: Smile Website CDN
     url: https://website-assets.smilecdn.co
     timeout: 1
+    days_warning: 365
   - name: Smile Platform Email Asssets CDN
     url: https://platform-email-assets.smilecdn.co/Smile.io_whitebg_crop.png
     timeout: 1
+    days_warning: 365
   - name: Smile Downloads CDN
     url: https://downloads.smilecdn.co/smile-io-explainer-page.zip
     timeout: 1
+    days_warning: 365
   - name: Smile-Shopify.js CDN
     url: https://shopify.smilecdn.co/v1/smile-shopify.js
     timeout: 1
+    days_warning: 365
   - name: Smile-Bigcommerce.js CDN
     url: https://bigcommerce.smilecdn.co/v1/smile-bigcommerce.js
     timeout: 1
+    days_warning: 365
   - name: Smile-UI.js CDN
     url: https://smile-ui.smilecdn.co/v1/smile-ui.js
     timeout: 1
+    days_warning: 365
