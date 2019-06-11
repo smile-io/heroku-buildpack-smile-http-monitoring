@@ -8,7 +8,7 @@ instances:
     timeout: 1
     days_warning: 28
     days_critical: 14
-  - name: Smile App
+  - name: Smile Admin
     url: https://app.smile.io
     timeout: 1
     days_warning: 28
@@ -18,8 +18,8 @@ instances:
     timeout: 1
     days_warning: 28
     days_critical: 14
-  - name: Smile Admin
-    url: https://admin.smile.io
+  - name: Smile Internal
+    url: https://internal.smile.io
     timeout: 1
     days_warning: 28
     days_critical: 14
