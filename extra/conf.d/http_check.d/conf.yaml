@@ -59,3 +59,8 @@ instances:
     days_warning: 60
     days_critical: 14
     http_response_status_code: 2\d\d
+  - name: Smile Blog
+    url: https://blog.smile.io/
+    timeout: 1
+    days_warning: 60
+    days_critical: 14
