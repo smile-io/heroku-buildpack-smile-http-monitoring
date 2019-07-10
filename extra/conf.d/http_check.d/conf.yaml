@@ -8,59 +8,71 @@ instances:
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Admin
     url: https://app.smile.io
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Website
     url: https://www.smile.io
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Internal
     url: https://internal.smile.io
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Website CDN
     url: https://website-assets.smilecdn.co
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Platform Email Asssets CDN
     url: https://platform-email-assets.smilecdn.co/Smile.io_whitebg_crop.png
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Downloads CDN
     url: https://downloads.smilecdn.co/smile-io-explainer-page.zip
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile-Shopify.js CDN
     url: https://shopify.smilecdn.co/v1/smile-shopify.js
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile-Bigcommerce.js CDN
     url: https://bigcommerce.smilecdn.co/v1/smile-bigcommerce.js
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile-UI.js CDN
     url: https://smile-ui.smilecdn.co/v1/smile-ui.js
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
   - name: Smile Help Docs CDN
     url: https://help.smile.io
     timeout: 1
     days_warning: 60
     days_critical: 14
     http_response_status_code: 2\d\d
+    min_collection_interval: 60
   - name: Smile Blog
     url: https://blog.smile.io/
     timeout: 1
     days_warning: 60
     days_critical: 14
+    min_collection_interval: 60
