@@ -76,3 +76,11 @@ instances:
     days_warning: 60
     days_critical: 14
     min_collection_interval: 60
+  - name: Smile Referrals (regular)
+    url: http://i.refs.cc/xQ8q6ogk
+    timeout: 1
+    min_collection_interval: 60
+  - name: Smile Referrals (custom domain)
+    url: http://livethe.pinpoint.life/xQ8q6ogk
+    timeout: 1
+    min_collection_interval: 60
