@@ -66,7 +66,7 @@ instances:
   - name: Smile Help Docs CDN
     url: https://help.smile.io
     timeout: 1
-    days_warning: 60
+    days_warning: 25
     days_critical: 14
     http_response_status_code: 2\d\d
     min_collection_interval: 60
