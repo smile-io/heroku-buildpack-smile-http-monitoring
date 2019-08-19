@@ -73,7 +73,7 @@ instances:
   - name: Smile Blog
     url: https://blog.smile.io/
     timeout: 1
-    days_warning: 60
+    days_warning: 30
     days_critical: 14
     min_collection_interval: 60
   - name: Smile Referrals (regular)
