@@ -84,3 +84,15 @@ instances:
     url: http://livethe.pinpoint.life/xQ8q6ogk
     timeout: 1
     min_collection_interval: 180
+  - name: MageRewards Account SignIn
+    url: https://account.magerewards.com/
+    timeout: 1
+    min_collection_interval: 180
+    days_warning: 60
+    days_critical: 14
+  - name: MageRewards CDN
+    url: https://cdn.magerewards.com/
+    timeout: 1
+    min_collection_interval: 180
+    days_warning: 60
+    days_critical: 14
